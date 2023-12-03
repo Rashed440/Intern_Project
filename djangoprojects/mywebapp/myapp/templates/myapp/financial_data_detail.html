@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2 style="text-align: center;border: 2px #000;">Financial Data Detail</h2>
+<div class="card text-bg-success mb-3" style="max-width: 18rem;margin: 0 auto;float: none;margin-bottom: 10px;"">
+  <div class="card-header">Date:</div>
+  <div class="card-body">
+    <h3 class="card-title">{{ data.date }}</h3>
+  </div>
+</div>
+
+<div class="card text-bg-success mb-3" style="max-width: 18rem;margin: 0 auto;float: none;margin-bottom: 10px;"">
+  <div class="card-header">Trade Code:</div>
+  <div class="card-body">
+    <h3 class="card-title">{{ data.trade_code }}</h3>
+  </div>
+</div>
+
+<div class="card text-bg-success mb-3" style="max-width: 18rem;margin: 0 auto;float: none;margin-bottom: 10px;"">
+  <div class="card-header">High:</div>
+  <div class="card-body">
+    <h3 class="card-title">{{ data.high }}</h3>
+  </div>
+</div>
+
+<div class="card text-bg-success mb-3" style="max-width: 18rem; margin: 0 auto;float: none;margin-bottom: 10px;">
+  <div class="card-header">Low:</div>
+  <div class="card-body">
+    <h3 class="card-title">{{ data.low }}</h3>
+  </div>
+</div>
+
+<div class="card text-bg-success mb-3" style="max-width: 18rem;margin: 0 auto;float: none;margin-bottom: 10px;"">
+  <div class="card-header">Open:</div>
+  <div class="card-body">
+    <h3 class="card-title">{{ data.open_price }}</h3>
+  </div>
+</div>
+
+<div class="card text-bg-success mb-3" style="max-width: 18rem;margin: 0 auto;float: none;margin-bottom: 10px;"">
+  <div class="card-header">Close:</div>
+  <div class="card-body">
+    <h3 class="card-title">{{ data.close_price }}</h3>
+  </div>
+</div>
+
+<div class="card text-bg-success mb-3" style="max-width: 18rem;margin: 0 auto;float: none;margin-bottom: 10px;"">
+  <div class="card-header">Volume:</div>
+  <div class="card-body">
+    <h3 class="card-title">{{ data.volume }}</h3>
+  </div>
+</div>
+
+{% endblock %}
